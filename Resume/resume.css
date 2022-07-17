@@ -1,0 +1,15 @@
+html{
+    padding: 50px;
+    font-size: large;
+}
+header{
+    text-align: center;
+}
+
+section{
+    border-bottom: 1px black solid;
+}
+
+p span{
+    float:right
+}
