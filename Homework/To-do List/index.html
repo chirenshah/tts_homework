@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO List</title>
+</head>
+<body>
+    <input type="text" name="add" id="add">
+    <input type="submit" id="Submit">
+    <ul id="list">
+    </ul>
+</body>
+    <script>
+        var text = document.getElementById("add");
+        var submit = document.getElementById("Submit");
+        var list = document.getElementById("list");
+        submit.addEventListener("click",()=>{
+            var child = document.createElement("ul")
+            child.innerHTML = text.value;
+            list.appendChild(child);
+            text.value = "";
+        })
+        const onClick = (event) => {
+            event.srcElement.style = "text-decoration: line-through; color:red"
+            setTimeout(()=>{
+                event.srcElement.parentNode.removeChild(event.srcElement);
+            },1000)
+        }
+        list.addEventListener('click', onClick);
+    </script>
+</html>

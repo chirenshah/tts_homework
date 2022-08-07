@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+}
+nav{
+    background-color: black;
+    height: 2em;
+    text-align: center;
+}
+li{
+    color: white;
+    text-transform: capitalize;
+    display: inline;
+    margin-right: 2em;
+    font-size: small;
+}
+
+input[type="text"]{
+    width: 500px;
+}
+
+img{
+    width: 1em;
+}
+
+span{
+    float: right;
+    color: white;
+    text-align: right;
+    font-size: small;
+}
+
+span img{
+    filter: invert(1);
+}
+
+ul{
+    padding-inline-start: 0px;
+}
+
+#logo{
+    text-align: center;
+    background-color: red;
+    float:left;
+    height: 100%;
+}
+
+#logo li{
+    font-size: large;
+    margin: 0px 10px;
+}
